@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0 auto;
     padding: 0 auto;
@@ -11,6 +15,8 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Georgia', Times, Times New Roman, serif;
     color: #4aaaa5;
 }
+
+/* Navigation styles */
 
 nav {
     width: 960px;
@@ -43,6 +49,7 @@ nav li {
     float: right;
     margin-left: -25px;
     padding-top: 10px;
+    padding-right: 10px;
 }
 
 nav li a {
@@ -56,90 +63,130 @@ nav a {
     color: #cccccc;
 }
 
+nav a:hover {
+    color: #4aaaa5;
+}
+
 header {
     background-color: #ffffff;
     border-color: #cccccc;
     margin-left: 150px;
 }
 
+
 section {
-    padding-top: 50px;
+    padding-top: 80px;
     padding-bottom: 100px;
-    background-image: url('/Users/lancerush/Documents/KU-Bootcamp/basic-portfolio/assets/images/circles-light.png');
+    background-image: url('/assets/images/circles-light.png');
     border-top: 10px;
     border-bottom: 4px solid #4aaaa5;
 }
 
+
+/* main area of the div box area */
 .main-content {
-    margin: 0 auto;
+    margin: 0 12%;
     padding: 30px 10px 60px 10px;
-    width: 960px;
+    width: 75%;
     background-color: #ffffff;
 }
-
 .main-content img {
-    width: 200px;
-    height: auto;
+    float: left;
     margin-left: -15px;
-    margin-top: -10px;
+    padding-right: 20px;
 }
 
 .main-content p {
-    padding: 5px;
-    margin-left: 15px;
+    padding: 3px;
+    margin-left: 25px;
+    font-size: 18px;
+    width: 800px;
 }
 
 .main-content h2 {
     padding-left: 10px;
 }
 
-.clearfix::after {
+hr {
+    background-color: #eee;
+    color: #eee;
+    border: 0 none;
+    width: 95%;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+/* image styles */
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 0;
+    position: relative;
+}
+
+.column img {
+    padding: 14px;
+}
+
+.column a {
+    text-decoration: none;
+    color: white;
+}
+
+.column a:hover {
+    color: #eee;
+}
+
+.main-content-portfolio {
+    margin: 0 12%;
+    padding: 30px 10px 60px 10px;
+    width: 74%;
+    background-color: #ffffff;
+}
+
+.badge {
+    position: absolute;
+    background-color: #4aaaa5;
+    color: white;
+    bottom: 25px;
+    width: 176px;
+    margin-left: 10px;
+    height: 55px;
+    text-align: center;
+}
+
+.row {
+    margin-left: 40px;
+}
+.row::after {
     content: "";
     clear: both;
     display: table;
 }
 
-hr {
-    color: #cccccc;
-    width: 98%;
-    margin-left: auto;
-    margin-right: auto;
 
-}
-
-img {
-    float: left;
-    border-radius: 4px;
-    box-shadow: -9px -5px 10px -3px rgba(133,134,138,0.81);
-    margin-right: 20px;
-}
-
-div.polaroid {
-    width: 24.99999%;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    float: left;
-}
-
-div.container {
-    text-align: center;
-    padding: 10px 20px;
-}
-
+/* form styles */
 
 form {
     padding-top: 10px;
-    padding-left: 5px;
+    padding-left: 50px;
     padding-right: 5px;
     padding-bottom: 0;
 }
 input[type=text], [type=email], textarea {
-    width: 100%;
-    padding: 14px 18px;
-    margin: 5px 0;
+    width: 90%;
+    padding: 12px 18px;
+    margin: 15px 0;
     display: inline-block;
     border-radius: 4px;
     box-sizing: border-box;
+}
+
+label {
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 button {
@@ -154,12 +201,16 @@ button {
 }
 
 button:hover {
-    background-color: #4aaaa5a9
+    background-color: #fff;
+    color: #4aaaa5;
 }
 
 footer {
     background-color: #666666;
-    padding: 28px;
+    padding: 20px 10px 40px 10px;
     text-align: center;
     color: #cccccc;
+    height: 50px;
+    border-top: 10px solid #4aaaa5
+    
 }
