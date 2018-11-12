@@ -94,6 +94,7 @@ section {
     float: left;
     margin-left: -15px;
     padding-right: 20px;
+    filter: grayscale(65%);
 }
 
 .main-content p {
@@ -136,7 +137,8 @@ hr {
 }
 
 .column a:hover {
-    color: #eee;
+    color: whitesmoke;
+    font-size: 17px;
 }
 
 .main-content-portfolio {
@@ -182,11 +184,18 @@ input[type=text], [type=email], textarea {
     display: inline-block;
     border-radius: 4px;
     box-sizing: border-box;
+    border: 0.25px solid rgba(235, 229, 229, .98);
+    background-color: rgba(235, 229, 229, 0.589);
+    font-size: 14px;
 }
 
 label {
     padding-bottom: 20px;
     padding-top: 20px;
+}
+
+label span {
+    color: red;
 }
 
 button {
