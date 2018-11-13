@@ -187,6 +187,7 @@ input[type=text], [type=email], textarea {
     border: 0.25px solid rgba(235, 229, 229, .98);
     background-color: rgba(235, 229, 229, 0.589);
     font-size: 14px;
+    
 }
 
 label {
@@ -196,6 +197,14 @@ label {
 
 label span {
     color: red;
+}
+
+input[type=text]:hover, [type=email]:hover, textarea:hover {
+    border: 1px solid #4aaaa5;
+}
+
+input[type=text]:focus, [type=email]:focus, textarea:focus {
+    outline: none;
 }
 
 button {
